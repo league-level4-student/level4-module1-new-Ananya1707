@@ -13,11 +13,14 @@ public class MixedCapsString implements TextFunkifier{
 	@Override
 	public String funkifyText() {
 		// TODO Auto-generated method stub
+		String allCaps = unfunkifiedText.toUpperCase();
 		char c = 'c';
     	String mixed = "";
 		for  (int i  = 0; i < unfunkifiedText.length(); i++) {
 			if(i%2 == 0) {
-				
+				c = unfunkifiedText.charAt(i);
+
+
 						
 			}
     		
