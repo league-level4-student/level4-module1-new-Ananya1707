@@ -43,7 +43,9 @@ public class TextFunkifierTest {
      */
 
     @Test
-    public void testCustomString() {
+    public void SwitchCapsString() {
+    	SwitchCapsString abc = new SwitchCapsString("HeLLo");
+         assertEquals("hEllO", abc.funkifyText());
 
     }
 }
