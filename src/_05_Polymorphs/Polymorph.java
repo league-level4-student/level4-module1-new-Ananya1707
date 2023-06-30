@@ -11,9 +11,18 @@ public abstract class Polymorph {
     public Polymorph(int x, int y){
    	 this.x = x;
    	 this.y = y;
-   	 this.width = width;
-   	 this.height = height;
+   	 this.width = 25;
+   	 this.height = 25;
     }
+    
+    public int getX() {
+    	return x;
+    }
+    
+    public int getY() {
+    	return y;
+    }
+    
     
     public int getWidth() {
     	return width;
