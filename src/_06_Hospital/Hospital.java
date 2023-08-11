@@ -33,9 +33,20 @@ public class Hospital {
 		
 	}
 
-	public void assignPatientsToDoctors() {
+	public void assignPatientsToDoctors(){
+		for(int i = 0; i < doctorList.size();i++) {
+			for(int j = unassignedPatientList.size()-1; j>=0; j--) {
+				try {
+					doctorList.get(i).assignPatient(unassignedPatientList.get(j));
+					unassignedPatientList.remove(j);
+				} catch (DoctorFullException e) {
+					// TODO Auto-generated catch block
+					//e.printStackTrace();
+					break;
+				}
+			}
 
-		
+		}
 	}
 	
 	

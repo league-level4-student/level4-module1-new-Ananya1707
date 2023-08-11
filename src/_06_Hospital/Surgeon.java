@@ -6,8 +6,13 @@ public class Surgeon extends Doctor {
 		
 	}
 	
-	public void performsSurgery() {
-		
+	public boolean performsSurgery() {
+		return true;
+	}
+
+	public boolean makesHouseCalls() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
